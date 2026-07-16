@@ -1,1 +1,18 @@
-export default function Globe(){return <div className="globe-wrap" aria-hidden="true"><div className="globe"><span className="orbit orbit-one"/><span className="orbit orbit-two"/><span className="orbit orbit-three"/><span className="route route-one"/><span className="route route-two"/><span className="route route-three"/><i className="dot dot-one"/><i className="dot dot-two"/><i className="dot dot-three"/><i className="dot dot-four"/></div></div>}
+import Image from "next/image";
+
+export default function Globe() {
+  return (
+    <div className="hero-globe-wrap" aria-hidden="true">
+      <div className="hero-globe-glow" />
+
+      <Image
+        src="/hero-globe.png"
+        alt=""
+        width={816}
+        height={834}
+        priority
+        className="hero-globe-image"
+      />
+    </div>
+  );
+}

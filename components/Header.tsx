@@ -20,18 +20,29 @@ export default function Header() {
       <div className="container header-inner">
         <Link
           href="/"
-          className="brand brand-image-link"
+          className="header-brand"
           aria-label="Caspian Workforce Group home"
           onClick={() => setOpen(false)}
         >
-          <Image
-            src="/logo-horizontal.png"
-            alt="Caspian Workforce Group"
-            width={620}
-            height={420}
-            priority
-            className="header-logo-image"
-          />
+          <span className="header-brand-symbol">
+            <Image
+              src="/brand-globe.png"
+              alt=""
+              width={260}
+              height={150}
+              priority
+              className="header-brand-globe"
+            />
+
+            <small>TRUST. PARTNERSHIP. RESULTS.</small>
+          </span>
+
+          <span className="header-brand-divider" />
+
+          <span className="header-brand-name">
+            <strong>CASPIAN</strong>
+            <span>WORKFORCE GROUP</span>
+          </span>
         </Link>
 
         <nav className="nav" aria-label="Primary navigation">

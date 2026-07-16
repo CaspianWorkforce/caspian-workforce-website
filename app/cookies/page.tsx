@@ -1,0 +1,1 @@
+export default function CookiesPage(){return <section className="legal-page"><div className="container narrow"><h1>Cookie Policy</h1><p>This website may use essential cookies required for basic functionality and user preferences.</p><p>Future analytics tools will be disclosed here before activation.</p></div></section>}
